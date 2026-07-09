@@ -1,0 +1,117 @@
+ping -c 4 google.com  --  Checks internet connectivity by sending 4 packets to google.com
+sudo apt update  --  Updates the package lists for upgrades and new package installations
+sudo apt upgrade -y  --  Upgrades all installed packages to their latest versions automatically
+pwd  --  Prints the current working directory path
+ls  --  Lists files and directories in the current directory
+ls -l  --  Lists files and directories in a detailed long-listing format
+ls -a  --  Lists all files and directories, including hidden ones
+mkdir CDAC  --  Creates a new directory named CDAC
+cd CDAC  --  Changes the current working directory to CDAC
+mkdir Linux Git Docker  --  Creates multiple directories named Linux, Git, and Docker at once
+mkdir -p Project/src/java  --  Creates nested parent and subdirectories recursively
+touch file1.txt  --  Creates an empty file named file1.txt
+cat > student.txt  --  Creates a new file or overwrites it and allows typing text into it directly
+cat student.txt  --  Displays the entire content of student.txt in the terminal
+less student.txt  --  Opens student.txt for viewing page-by-page (press Q to quit)
+cp student.txt copy.txt  --  Copies the content of student.txt to a new file named copy.txt
+cp student.txt Linux/  --  Copies student.txt into the Linux directory
+mv copy.txt newcopy.txt  --  Renames copy.txt to newcopy.txt
+mv newcopy.txt Git/  --  Moves newcopy.txt into the Git directory
+find -name "*.txt"  --  Finds all files in the current directory tree ending with .txt
+find -name student.txt  --  Searches for a specific file named student.txt
+grep Operating student.txt  --  Searches for the case-sensitive word 'Operating' in student.txt
+grep -i operating student.txt  --  Searches for 'operating' in student.txt ignoring case
+grep -n Operating student.txt  --  Searches for 'Operating' in student.txt and displays line numbers
+echo "Linux Commands" >> student.txt  --  Appends the text 'Linux Commands' to the end of student.txt
+wc student.txt  --  Counts and displays lines, words, and byte counts of student.txt
+wc -l student.txt  --  Counts and displays the number of lines in student.txt
+wc -w student.txt  --  Counts and displays the number of words in student.txt
+wc -c student.txt  --  Counts and displays the number of characters/bytes in student.txt
+head student.txt  --  Displays the first 10 lines of student.txt
+tail student.txt  --  Displays the last 10 lines of student.txt
+sort student.txt  --  Sorts the lines of student.txt alphabetically
+ls > list.txt  --  Redirects and overwrites the output of ls into list.txt
+ls >> list.txt  --  Redirects and appends the output of ls to the end of list.txt
+ls | wc -l  --  Pipes the output of ls into wc to count the total number of files/directories
+chmod 777 student.txt  --  Changes file permissions of student.txt to read, write, and execute for everyone
+whoami  --  Displays the username of the current active user
+id  --  Displays user and group IDs for the current user
+sudo useradd student1  --  Creates a new user account named student1
+sudo passwd student1  --  Sets or changes the password for user student1
+su student1  --  Switches the terminal session to user student1
+exit  --  Exits the current shell or terminal session
+sudo userdel student1  --  Deletes the user account student1
+sudo userdel -r student1  --  Deletes user student1 along with their home directory
+rm file2.txt  --  Removes/deletes file2.txt
+rmdir Docker  --  Removes/deletes an empty directory named Docker
+rm -r Linux  --  Removes a non-empty directory named Linux recursively
+date  --  Displays the current system date and time
+cal  --  Displays a calendar of the current month
+free -h  --  Displays free and used system memory in a human-readable format
+df -h  --  Displays disk space usage of file systems in human-readable format
+hostname  --  Displays the system's network host name
+ps  --  Lists running processes in the current shell session
+ps -ef  --  Lists all active system processes with detailed information
+kill PID  --  Terminates a process using its Process ID (PID)
+touch .hidden  --  Creates a hidden file named .hidden
+tar -cvf project.tar Project  --  Creates a tar archive named project.tar from the Project directory
+tar -xvf project.tar  --  Extracts files from a tar archive named project.tar
+zip files.zip student.txt  --  Compresses student.txt into a zip file named files.zip
+unzip files.zip  --  Extracts the files from files.zip
+sudo apt install zip unzip  --  Installs the zip and unzip utilities
+git --version  --  Checks the currently installed version of Git
+git config --global user.name "Your Name"  --  Configures the global Git username for commit identity
+git config --global user.email "your@email.com"  --  Configures the global Git email for commit identity
+git config --list  --  Lists all current Git configuration variables
+git init  --  Initializes a new, empty local Git repository in the current folder
+git status  --  Displays the state of the working directory and staging area
+git add file1.txt  --  Adds file1.txt to the staging area to prepare it for a commit
+git add .  --  Adds all new, modified, or deleted files in the directory to the staging area
+git commit -m "First Commit"  --  Records staged snapshots into the commit history with a custom message
+git log  --  Shows the full commit history log for the active branch
+git log --oneline  --  Shows the commit history log summarized in compact single lines
+git branch  --  Lists all local branches in the repository
+git branch feature  --  Creates a new branch named feature
+git checkout feature  --  Switches the working context to the feature branch
+git switch feature  --  An alternative command to switch to the feature branch
+git checkout master  --  Switches back to the master branch
+git checkout main  --  Switches back to the main branch
+git merge feature  --  Merges the changes from the feature branch into the current branch
+git branch -d feature  --  Deletes the specified branch named feature
+git clone GitLab GitClone  --  Clones a local repository named GitLab into a new folder named GitClone
+git clone https://github.com/username/repository.git  --  Clones a remote repository from GitHub to the local machine
+git remote add origin https://github.com/username/repository.git  --  Links a local repository to a remote repository URL named origin
+git remote -v  --  Displays the URLs of all configured remote repositories
+git push -u origin main  --  Pushes local commits to the remote main branch and sets it as default upstream
+git push  --  Pushes committed local changes to the default upstream remote branch
+git pull origin main  --  Fetches changes from the remote main branch and merges them into the current branch
+git fetch  --  Downloads tracking info and objects from the remote repository without merging
+git diff  --  Shows differences between the working directory and the staging area or commits
+git rm file2.txt  --  Removes file2.txt from the working tree and stages the deletion
+sudo systemctl status docker  --  Checks if the Docker service is currently active and running
+sudo systemctl start docker  --  Starts the Docker background service
+sudo systemctl enable docker  --  Configures the Docker service to start automatically on system boot
+docker info  --  Displays system-wide information regarding the Docker installation
+docker images  --  Lists all locally stored Docker images
+docker ps  --  Lists all currently running Docker containers
+docker ps -a  --  Lists all local Docker containers, including running and stopped ones
+docker pull ubuntu  --  Downloads the official Ubuntu image from Docker Hub to the host system
+docker run -it --name mycontainer ubuntu  --  Creates and starts an interactive container named mycontainer from the Ubuntu image
+docker start mycontainer  --  Starts a stopped container named mycontainer
+docker attach mycontainer  --  Attaches the terminal standard input/output stream to a running container
+docker exec -it mycontainer bash  --  Opens a fresh interactive Bash shell inside an already running container
+docker cp hostfile.txt mycontainer:/root/  --  Copies a file from the host machine into a container's root directory
+docker cp mycontainer:/root/hostfile.txt .  --  Copies a file from inside a container out to the host machine's current directory
+docker commit mycontainer myimage:v1  --  Creates a new local Docker image from a container's current state
+docker stop mycontainer  --  Stops a running container named mycontainer gracefully
+rm mycontainer  --  Deletes a stopped container named mycontainer
+docker rmi myimage:v1  --  Deletes a locally stored Docker image named myimage:v1
+docker build -t ubuntu-demo .  --  Builds a custom Docker image tagged ubuntu-demo from a Dockerfile in the current directory
+docker run -dp 8080:80 --name webcontainer mywebsite  --  Runs a container detached, maps host port 8080 to container port 80, and names it webcontainer
+docker logs webcontainer  --  Fetches and displays the console logs of a container named webcontainer
+docker inspect webcontainer  --  Returns detailed, low-level configuration data of a container in JSON format
+docker history mywebsite  --  Shows the history and layers of a Docker image named mywebsite
+docker rm -f webcontainer  --  Forcefully stops and removes a running container named webcontainer
+chmod +x myscript.sh  --  Grants executable permissions to a shell script file named myscript.sh
+./myscript.sh  --  Executes a shell script named myscript.sh in the current directory
+bash myscript.sh  --  Runs a shell script named myscript.sh explicitly using the Bash interpreter
