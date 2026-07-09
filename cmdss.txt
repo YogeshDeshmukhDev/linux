@@ -1,0 +1,137 @@
+ping -c 4 google.com -- test internet connectivity
+sudo apt install package -y -- install a package
+sudo apt update -- refresh package list
+sudo apt upgrade -y -- upgrade installed packages
+sudo systemctl enable docker -- start docker automatically on boot
+sudo systemctl start docker -- start docker service
+sudo systemctl status docker -- check docker service status
+sudo usermod -aG docker $USER -- allow running docker without sudo
+
+cal -- show calendar
+cat file -- display file content
+cat > file -- create file and type content, save with Ctrl+D
+cd dir -- change directory
+chmod 777 file -- give full read/write/execute permission
+date -- show current date and time
+df -h -- show disk space usage, human readable
+echo "text" >> file -- append text to file
+find . -name "pattern" -- search for files by name
+free -h -- show memory usage
+grep -i pattern file -- search text, ignore case
+grep -n pattern file -- search text, show line numbers
+grep pattern file -- search text in file
+head file -- show first 10 lines of file
+hostname -- show system hostname
+id -- show user id and group info
+kill PID -- kill process by PID
+less file -- view file page by page, q to quit
+ls -a -- list files including hidden
+ls -l -- list files with details
+ls -- list files
+ls > file -- redirect output to file, overwrite
+ls >> file -- redirect output to file, append
+mkdir -p dir/subdir -- create nested directories
+mkdir dir -- create directory
+mv source dest -- move or rename file
+passwd username -- set password for user
+ps -ef -- show detailed running processes
+ps -- show running processes
+pwd -- print working directory
+rm -r dir -- remove directory recursively
+rm file -- remove file
+rmdir dir -- remove empty directory
+sort file -- sort lines in file
+su username -- switch user
+tar -cvf archive.tar dir -- create tar archive
+tar -xvf archive.tar -- extract tar archive
+touch file -- create empty file
+unzip file.zip -- extract zip file
+useradd username -- create new user
+userdel -r username -- delete user with home directory
+userdel username -- delete user
+wc -c file -- count characters
+wc -l file -- count lines
+wc -w file -- count words
+wc file -- count lines, words and characters
+whoami -- show current logged in user
+zip file.zip target -- compress file into zip
+cp source dest -- copy file
+| -- pipe output of one command into another
+
+git add . -- stage all changes
+git add file -- stage specific file
+git branch -- list branches
+git branch -d name -- delete branch
+git branch name -- create new branch
+git checkout name -- switch to branch
+git clone path -- clone repository
+git commit -m "msg" -- commit staged changes with message
+git config --global user.email "email" -- set commit email
+git config --global user.name "name" -- set commit username
+git config --list -- show git configuration
+git diff -- show unstaged changes
+git fetch -- download changes without merging
+git init -- initialize new git repo
+git log -- show commit history
+git log --oneline -- show commit history compactly
+git merge branch -- merge branch into current branch
+git pull origin main -- fetch and merge changes from remote
+git push -- push commits to remote
+git push -u origin main -- push and set upstream branch
+git remote -v -- show remote repository urls
+git remote add origin url -- link local repo to remote
+git rm file -- remove file and stage the deletion
+git status -- show repository status
+git switch name -- switch to branch, alternative to checkout
+git --version -- check git version
+
+docker attach container -- attach terminal to running container
+docker build -t name . -- build image from Dockerfile
+docker commit container image -- create new image from container
+docker cp container:path file -- copy file from container to host
+docker cp file container:path -- copy file from host to container
+docker exec -it container bash -- run command inside running container
+docker history image -- show image build history
+docker images -- list images
+docker info -- show docker system info
+docker inspect container -- show detailed container info
+docker logs container -- show container logs
+docker ps -- list running containers
+docker ps -a -- list all containers, running and stopped
+docker pull image -- download image from registry
+docker rm container -- remove container
+docker rmi image -- remove image
+docker run -d -p host:container image -- run container in background with port mapping
+docker run -it --name name image -- create and run container interactively
+docker start container -- start a stopped container
+docker stop container -- stop a running container
+docker --version -- check docker version
+
+#!/bin/bash -- shebang, defines script interpreter
+./script.sh -- run script, needs execute permission
+arr=(a b c) -- define an array
+bash script.sh -- run script using bash
+case ... esac -- multi-way branch statement
+chmod +x script.sh -- give script execute permission
+echo -n -- print text without newline
+echo -- print text
+expr -- evaluate an expression
+for -- loop over a list or range
+function() { ... } -- define a function
+if / elif / else / fi -- conditional statement
+let -- perform arithmetic assignment
+read -p "prompt" var -- read input with a prompt message
+read variable -- read user input into a variable
+until -- loop until a condition becomes true
+while -- loop while a condition is true
+$0 -- name of the script
+$1 $2 ... -- positional arguments passed to script
+$# -- number of arguments passed
+$(( expression )) -- arithmetic expansion
+$@ -- all arguments passed to script
+${#arr[@]} -- number of elements in array
+${#str} -- length of string
+${arr[@]} -- all elements of array
+${str,,} -- convert string to lowercase
+${str:0:n} -- extract substring
+${str^^} -- convert string to uppercase
